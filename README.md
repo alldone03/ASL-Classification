@@ -1,4 +1,4 @@
-# 🧠 ASL-Classification
+# 🧠 American Sign Language (ASL)-Classification
 
 Klasifikasi American Sign Language (ASL) menggunakan deep learning untuk mengenali abjad A–Z berdasarkan gesture tangan.  
 Proyek ini cocok untuk edukasi, pengembangan aplikasi penerjemah bahasa isyarat, atau riset machine learning.
@@ -18,26 +18,16 @@ Proyek ini cocok untuk edukasi, pengembangan aplikasi penerjemah bahasa isyarat,
 
 ASL-Classification/
 │
-
 ├── dataset/ # Dataset gambar tangan ASL
-
 ├── models/ # Model terlatih (.h5, .pt, dll)
-
 ├── notebooks/ # Notebook Jupyter untuk training & evaluasi
-
 ├── scripts/ # Script Python: train, evaluate, predict
-
 ├── utils/ # Fungsi preprocessing, visualisasi, dll
-
 ├── app.py # (Opsional) aplikasi GUI / Streamlit
-
 ├── requirements.txt # Library yang dibutuhkan
-
 └── README.md # Dokumentasi proyek
 
-yaml
-Copy
-Edit
+
 
 ---
 
@@ -58,9 +48,8 @@ Akurasi validasi: 97.5%
 
 Model: CNN 3-layer
 
-Epoch: 25
+Epoch: 200
 
-Visualisasi: confusion matrix tersedia di notebooks/
 
 ## ✅ Rencana Pengembangan
  Training model klasifikasi abjad
