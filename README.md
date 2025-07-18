@@ -1,37 +1,50 @@
-🧠 ASL-Classification
-Klasifikasi American Sign Language (ASL) menggunakan model pembelajaran mesin untuk mengenali abjad dari A–Z berdasarkan gesture tangan. Proyek ini cocok untuk edukasi, pengembangan aplikasi penerjemah isyarat, atau sebagai dasar proyek AI di bidang inklusivitas.
+# 🧠 ASL-Classification
 
-🚀 Fitur
-Deteksi abjad ASL dari gambar atau kamera real-time
+Klasifikasi American Sign Language (ASL) menggunakan deep learning untuk mengenali abjad A–Z berdasarkan gesture tangan.  
+Proyek ini cocok untuk edukasi, pengembangan aplikasi penerjemah bahasa isyarat, atau riset machine learning.
 
-Preprocessing gambar otomatis
+---
 
-Pelatihan model kustom
+## 🚀 Fitur
 
-Akurasi evaluasi & confusion matrix
+- Deteksi abjad ASL dari gambar statis
+- Model CNN sederhana dengan akurasi tinggi
+- Evaluasi model menggunakan confusion matrix
+- (Opsional) Prediksi real-time menggunakan webcam
 
-Prediksi real-time dari webcam (opsional)
+---
 
-📁 Struktur Folder
-bash
-Copy
-Edit
+## 📁 Struktur Folder
+
 ASL-Classification/
 │
-├── dataset/              # Dataset gambar tangan ASL (train/test)
-├── models/               # Model terlatih (.h5, .pt, dll)
-├── notebooks/            # Notebook Jupyter untuk pelatihan & evaluasi
-├── scripts/              # Script Python untuk training, testing, inferensi
-├── utils/                # Preprocessing, visualisasi, dll
-├── requirements.txt      # Library yang dibutuhkan
-├── README.md             # Dokumentasi proyek
-└── app.py                # (Opsional) aplikasi GUI / streamlit
-📦 Instalasi
+├── dataset/ # Dataset gambar tangan ASL
+├── models/ # Model terlatih (.h5, .pt, dll)
+├── notebooks/ # Notebook Jupyter untuk training & evaluasi
+├── scripts/ # Script Python: train, evaluate, predict
+├── utils/ # Fungsi preprocessing, visualisasi, dll
+├── app.py # (Opsional) aplikasi GUI / Streamlit
+├── requirements.txt # Library yang dibutuhkan
+└── README.md # Dokumentasi proyek
+
+yaml
+Copy
+Edit
+
+---
+
+## 📦 Instalasi
+
+1. Clone repositori:
+
+```bash
+git clone https://github.com/namakamu/ASL-Classification.git
+cd ASL-Classification
+Install dependensi:
+
 bash
 Copy
 Edit
-git clone https://github.com/namakamu/ASL-Classification.git
-cd ASL-Classification
 pip install -r requirements.txt
 🔧 Cara Penggunaan
 1. Training Model
@@ -48,50 +61,59 @@ python scripts/evaluate.py --model models/asl_cnn.h5
 bash
 Copy
 Edit
-python scripts/predict.py --image test_img.jpg
-4. (Opsional) Real-time Webcam
+python scripts/predict.py --image path_ke_gambar.jpg
+4. (Opsional) Prediksi Webcam
 bash
 Copy
 Edit
 python scripts/webcam_predict.py
 🧪 Dataset
-Dataset yang digunakan: American Sign Language Letters Dataset
+Dataset: ASL Alphabet Dataset - Kaggle
+
+Struktur dataset:
 
 css
 Copy
 Edit
 dataset/
   ├── train/
-  │    ├── A/
-  │    ├── B/
-  │    └── ...
+  │   ├── A/
+  │   ├── B/
+  │   └── ...
   └── test/
-       ├── A/
-       └── ...
-📊 Hasil
-Akurasi: 97.5% pada data validasi
+      ├── A/
+      └── ...
+📊 Hasil Model
+Akurasi validasi: 97.5%
 
-Model terbaik: CNN 3-layer, trained 25 epochs
+Model: CNN 3-layer
 
-Contoh confusion matrix tersedia di notebooks/
+Epoch: 25
 
-✅ To-Do
- Training & evaluasi dasar
+Visualisasi: confusion matrix tersedia di notebooks/
 
- GUI interaktif dengan Streamlit
+✅ Rencana Pengembangan
+ Training model klasifikasi abjad
 
- Integrasi webcam dengan OpenCV
+ Evaluasi performa dengan confusion matrix
 
- Export ke TensorFlow Lite / ONNX
+ Real-time prediksi dari webcam
+
+ Export ke TensorFlow Lite atau ONNX
+
+ GUI menggunakan Streamlit
 
 📚 Referensi
-Kaggle: ASL Alphabet
+ASL Dataset - Kaggle
 
-TensorFlow CNN Example
+TensorFlow CNN Image Classification
 
 👨‍💻 Kontribusi
-Pull Request dan issue sangat disambut!
-Silakan fork, kembangkan, dan kirim PR jika ada ide perbaikan.
+Silakan fork, buka issue, atau kirim Pull Request untuk pengembangan proyek ini lebih lanjut 🙌
 
 📜 Lisensi
 MIT License © 2025 Aldan Prayogi
+
+yaml
+Copy
+Edit
